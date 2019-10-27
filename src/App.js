@@ -100,13 +100,13 @@ class App extends Component {
     var changeDue = (changeDueInCents / 100).toFixed(2);
 
     var twentiesDue = Math.floor(changeDueInCents / 2000);
-    changeDueInCents -= twentiesDue * 100;
+    changeDueInCents -= twentiesDue * 2000;
 
     var tensDue = Math.floor(changeDueInCents / 1000);
-    changeDueInCents -= tensDue * 100;
+    changeDueInCents -= tensDue * 1000;
 
     var fivesDue = Math.floor(changeDueInCents / 500);
-    changeDueInCents -= fivesDue * 100;
+    changeDueInCents -= fivesDue * 500;
 
     var onesDue = Math.floor(changeDueInCents / 100);
     changeDueInCents -= onesDue * 100;
